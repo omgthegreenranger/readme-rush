@@ -1,65 +1,25 @@
-# ${projectName}
+# README RUSH
 
 ## Description
 
-${description}
+As per challenge readme:
+>Create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain.
 
-## Table of Contents
+This script will generate the README requested (or rather, README2.md). It does not appear that Inquirer will allow for longer text (say, multiline, multiple paragraphs), which was unfortunate.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#tests)
-
+*As an added bonus*, I have used Inquirer's `when` property to put conditional prompts for both `tests` and `contibution guidelines.` If you answer "no" to either prompt, it will automatically enter boilerplate text for you. Otherwise, you can add your own. I have done this, as we may not have any specific data to include in their README.
 
 ## Installation
 
-${installation}
+This script is a node package, and requires:
+
+inquirer.js
+fs.js
+
+Please install as you would normally when using the script.
 
 ## Usage
 
-${usage}
+Simply run `node index.js` and answer the prompts given. See video below
 
-## License
-
-${license}
-
-## Contributing
-
-${contributing}
-
-## Tests
-
-${tests}
-
-## Questions
-
-${questions}
-
-
-
-"Apache license 2.0": "apache-2.0",
-"Creative Commons Attribution 4.0":	"cc-by-4.0",
-"Creative Commons Attribution Share Alike 4.0":	"cc-by-sa-4.0",
-"Do What The F*ck You Want To Public License": "wtfpl",
-"Educational Community License v2.0": "ecl-2.0",
-"GNU General Public License v2.0": "gpl-2.0",
-"GNU General Public License v3.0":	"gpl-3.0",
-"GNU Lesser General Public License v2.1":	"lgpl-2.1",
-"GNU Lesser General Public License v3.0":	"lgpl-3.0",
-"ISC": "isc",
-"MIT": "mit",
-"Mozilla Public License 2.0": "mpl-2.0",
-"Open Software License 3.0": "osl-3.0",
-"The Unlicense": "unlicense",
-"zLib License":	"zlib",
-
-
-curl \
-  -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer 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"\
-  -H "X-GitHub-Api-Version: 2022-11-28" \
-  https://api.github.com/licenses
+[Click here for a short video demonstrating use of the script](/assets/images/vokoscreenNG-2023-02-09_23-22-12.webm)
