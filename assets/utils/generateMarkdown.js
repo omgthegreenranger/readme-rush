@@ -34,11 +34,10 @@ const {name, code, url} = licenseList;
 
 
 function renderLicenseBadge(license) {
-  console.log(license);
+
   for (i = 0; i < licenseList.length; i++) {
     if(licenseList[i].name==license){
       licenseBadge = licenseList[i].url;
-      console.log(licenseList[i].url);
       return licenseBadge;
     }
   }
@@ -55,7 +54,6 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
 `;
 }
 
